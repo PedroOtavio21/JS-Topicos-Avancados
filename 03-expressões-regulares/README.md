@@ -37,3 +37,10 @@ Dentro das duas barras, você tem a possibilidade de trabalhar com caracteres es
 Retorna caracteres de 'a' à 'z'
 - '{}': Agrupamento de dados, porém retornando uma quantidade limite de elementos. Ex: 'a{1,3}' -> retorna 3 
 a´s em sequencia
+
+### Look ahead e Look behind
+Ferramentas utilizadas para encontrar caracteres específicos antes ou após um determinado elemento.
+- Positive look ahead: Ex: '/or(?=\s)/' -> retorna um or que precedem um espaço
+- Negative look ahead: Ex: '/or(?!\s)/' -> retorna o oposto do exemplo acima
+- Positive look behind: Ex: '/(?<=l)or/' -> retorna um l minúnsculo precedido de um or
+- Negative look behind: Ex: '/(?<!)or/' -> retorna o oposto do exemplo acima
