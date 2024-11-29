@@ -3,7 +3,7 @@ Uma Api do JavaScript que possibilita uma maneira de trabalhar com códigos ass�
 
 Uma promisse é um objeto com uma função associada a ela, onde essa função será executada de forma assíncrona e retornar um valor para ser trabalhado em seguida.
 
-Para que ela funciones, precisa trabalhar com tipos de "estados/momentos de seu ciclo de vida", como pending, resolved ou rejected
+Para que ela funcione, precisa trabalhar com tipos de "estados/momentos de seu ciclo de vida", como pending, resolved ou rejected
 - Uma promisse resolvida é uma promisse onde foi executada e teve sucesso, retornando o valor
 - Já uma promisse rejeitada foi executada e teve um problema ao decorrer de sua execução
 
@@ -18,3 +18,5 @@ const p = new Promise((resolve) => {
 
 console.log(p)
 ```
+
+O exemplo mais comum de uso das promisses é quando são chamadas dentro de outra função, visto que são chamadas imediatamente em seua execução
