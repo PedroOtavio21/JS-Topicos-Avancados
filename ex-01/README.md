@@ -19,3 +19,6 @@ Para que uma senha seja válida ela deve possuir:
 - Pelo menos 8 caracteres.
 
 As validação devem ser escritas em funções separadas que lançam um novo erro em caso de falha com uma mensagem apropriada. Esse erro deverá ser tratado através de um bloco trycatch, evitando que um erro seja emitido no console do navegador e mostrando para o usuário o erro ocorrido.
+
+## Nota
+Devido ao desentendimento desta parte do módulo, revoli apenas entender este conteúdo e deixar para resolver sozinho em outro momento, visto sua "dificuldade" em primeiro momento. 
