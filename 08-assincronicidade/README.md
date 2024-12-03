@@ -21,7 +21,7 @@ Ex.:
 ```js
 console.log('Passo 04')
 
-// O código abaixo é dado como um código assincrono, onde ao executar não trava a execução anterior.
+// O código abaixo é dado como um código assincrono, onde ao executar não trava a execução anterior, além de executar ao mesmo tempo que o restante do bloco de código no escopo de execução.
 setTimeout(() => {
     console.log('Passo 05')
 }, 2000)
