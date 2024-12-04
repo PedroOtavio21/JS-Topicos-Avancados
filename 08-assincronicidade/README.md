@@ -13,9 +13,9 @@ setp02()
 console.log('Passo 03')
 ```
 
-No caso da assincronicidade, seria o contrário de um código acima, onde não trava a execução da aplicação
+No caso da assincronicidade, seria o contrário de um código acima, onde não trava o fluxo comum de uma determinada aplicação
 
-Geralmente este tipo de aplicação é usada para acelerar a execução de um código, onde um determinado bloco de código não espera que a execução de outro bloco de código termine.
+Geralmente este tipo de aplicação é usada para acelerar a execução de um código, onde um determinado bloco de código não espera que a execução de outro bloco de código termine, sendo executado ao mesmo tempo!
 
 Ex.:
 ```js
