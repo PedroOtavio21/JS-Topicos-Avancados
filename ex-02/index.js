@@ -3,31 +3,36 @@ function calculateImc(weight, height){
     return new Promise((resolve, reject) => {
         if(typeof weight !== 'number' || typeof height !== 'number'){
             reject('Valores inseridos não são de tipo numérico.')
+        } else {
+            resolve(weight / (height * height))
         }
-
-        const result = weight / (height * height)
-        resolve(result)
     })
 }
 
 function imcSituation(weight, height){
-    return calculateImc(weight, height).then(resolve => {
-        if(resolve < 18.5){
-            console.log('Magresa')
-        } else if (resolve < 24.9){
-            console.log('Normal')
-        } else if (resolve < 29.9){
-            console.log('Sobrepeso')
-        } else if (resolve < 39.9){
-            console.log('Obesidade')
+    calculateImc(weight, height).then(result => {
+        console.log(`O resultado do cálculo de IMC foi de: ${result}`)
+        if(result < 18.5){
+            console.log('Situação: Magresa')
+        } else if (result < 25){
+            console.log('Situação: Normal')
+        } else if (result < 30){
+            console.log('Situação: Sobrepeso')
+        } else if (result < 40){
+            console.log('Situação: Obesidade')
         } else {
-            console.log('Obesidade grave')
+            console.log('Situação: Obesidade grave')
         }
     }).catch(err => {
         console.log(`Erro ao cálcular o IMC do paciente. O motivo foi: ${err}`)
     }).finally(() => {
         console.log(`Fim de execução do código`)
     }) 
+
+    console.log('Calculando...')
 }
 
-imcSituation(1.74, 78.2)
+imcSituation(78.2, 1.74)
+imcSituation(45, 1.65)
+imcSituation(71, 'teste')
+imcSituation(120, 1.80)
