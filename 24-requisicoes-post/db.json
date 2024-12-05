@@ -1,0 +1,34 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "Olá, mundo!",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "id": "2",
+      "title": "Requisições POST com Javascript",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "id": "5fda",
+      "title": "Aprendendo Node",
+      "author": "Isaac",
+      "content": "Lorem ipsun..."
+    },
+    {
+      "id": "fe89",
+      "title": "Aprendendo React",
+      "author": "Pedro",
+      "content": "Teste teste teste"
+    },
+    {
+      "id": "671f",
+      "title": "JavaScript VI",
+      "author": "Isaac",
+      "content": "Teste"
+    }
+  ]
+}

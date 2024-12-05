@@ -1,0 +1,15 @@
+{
+  "name": "24-requisicoes-post",
+  "version": "1.0.0",
+  "description": "Nesta aula veremos como são feitas as requisições post, além entender como utilizar a função fetch para requisições get e post",
+  "main": "index.js",
+  "scripts": {
+    "json-server": "json-server --watch db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
